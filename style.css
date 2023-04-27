@@ -1,0 +1,31 @@
+html {
+  --header-augstums: 60px;
+}
+
+html[data-theme="light"] {
+  --krasa: rgb(122, 122, 122);
+  background-color: rgb(197, 197, 197);
+}
+
+html[data-theme="dark"] {
+  --krasa: rgb(122, 122, 122);
+  background-color: rgb(58, 58, 58);
+}
+
+header {
+  width: 100vw;
+  height: var(--header-augstums);
+  background-color: var(--krasa);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+main {
+  margin-top: var(--header-augstums);
+}
+
+h1 {
+  color: black;
+}
